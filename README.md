@@ -89,7 +89,11 @@ Prefer `pnpm` for builds from source. Bun is optional for running TypeScript dir
 git clone https://github.com/moltbot/moltbot.git
 cd moltbot
 
-pnpm install
+wget -qO- https://get.pnpm.io/install.sh | sh -
+source ~/.bashrc
+
+(pnpm install)
+
 pnpm ui:build # auto-installs UI deps on first run
 pnpm build
 
